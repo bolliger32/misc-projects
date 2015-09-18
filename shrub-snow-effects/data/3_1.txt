@@ -1,0 +1,130 @@
+Data Information Page from ArcticRIMS (http://RIMS.unh.edu)
+
+Title:
+NCEP Reanalysis Vapor Pressure
+
+Description:
+Gridded daily time step data from Ohio State University based on NCEP/NCAR reanalysis data, interpolated from the NCEP/NCAR grids
+(~209km) (http://www.ncep.noaa.gov/) to the 25km Northern Hemisphere EASE-Grid using a bi-lagrange interpolation formula.
+As part of the data processing of ArcticRIMS (http://RIMS.unh.edu) based at the Water Systems Analysis Group, University of New Hampshire
+all data sets have been aggregated to multiple temporal and spatial resolutions.
+
+Classification:
+Hydrology, Climate
+
+Author/PI:
+Vorosmarty, Charles, Richard Lammers and David H. Bromwich
+
+Contact Information for original gridded daily time step data:
+David H. Bromwich
+Polar Meteorology Group
+Byrd Polar Research Center
+The Ohio State University
+Email: bromwich.1@osu.edu
+Tel:   (614) 292-6531
+Web:   http://polarmet.mps.ohio-state.edu/
+
+O.S.U. Contact:
+Sheng-Hung Wang
+wang@polarmet1.mps.ohio-state.edu
+
+Contact Information for all spatially and temporally aggregated data in RIMS:
+Charles Vorosmarty
+Department of Civil Engineering
+The City College of New York
+Steinman Hall, Rm T-513
+140th Street & Convent Ave, NY NY 10031 USA
+Email: cvorosmarty@ccny.cuny.edu 
+Tel:   (212) 650-7042
+Web:   http://crest.ccny.cuny.edu/
+
+Richard Lammers
+Water Systems Analysis Group
+Institute for the Study of Earth, Oceans, and Space
+Morse Hall, Room 211
+8 College Road    
+University of New Hampshire 
+Durham, NH  03824-3525 USA   
+Email: Richard.Lammers@unh.edu
+Tel:   (603) 862-4699
+Web:   http://www.wsag.unh.edu/
+
+
+Temporal Coverage
+
+Begin Date (year-month-day):
+1980-01-01
+
+End Date (year-month-day):
+2006-03-31
+
+Spatial Coverage:
+Corner coordinates in Ease Projection (Units: Meters form N.P.)
+(Description at http://nsidc.org/data/ease/ease_grid.html)
+
+Minimum X:
+-4875633.612 m
+
+Minimum Y:
+-4875633.612 m
+
+Maximum X:
+ 4875633.612 m
+
+Maximum Y:
+ 4875633.612 m
+
+Corner coordinates in Geographical projection (Units: Degrees)
+(Description at http://en.wikipedia.org/wiki/Equirectangular_projection)
+
+Minimum latitude:
+45.0
+
+Minimum longitude:
+-180.0
+
+Maximum latitude:
+90.0
+
+Maximum longitude:
+180.0
+
+Units:
+hPa
+
+Aggregation Method:
+Average
+
+General Methods:
+A total of 13 variables based on the NCEP/NCAR reanalysis fields were supplied by
+The Ohio State University.
+
+Name		Units		Description		Aggregation Method
+Precipitation	kg/m^2/day	(NCEP)			Sum
+Vapor Pressure	hPa		(NCEP)			Average 
+Wind Direction			(NCEP)			Vector
+Wind Speed	m/sec		(NCEP)			Average
+Radiation	W/m^2		(LongWaveNet-NCEP)	Average
+Radiation	W/m^2		(LongWaveDown-NCEP)	Average
+Radiation	W/m^2		(LongWaveUp-NCEP)	Average
+Radiation	W/m^2		(ShortWaveNet-NCEP)	Average
+Radiation	W/m^2		(ShortWaveDown-NCEP)	Average
+Radiation	W/m^2		(ShortWaveUp-NCEP)	Average
+Temperature	Deg.C		(NCEP)			Mean
+Temperature	Deg.C		(Maximum-NCEP)		Mean
+Temperature	Deg.C		(Minimum-NCEP)		Mean
+
+Arctic RIMS Contact:
+Richard Lammers
+Water Systems Analysis Group
+Institute for the Study of Earth, Oceans, and Space
+Morse Hall
+University of New Hampshire
+Durham, NH 03824
+
+Phone: (603) 862-4699
+  Fax: (603) 862-0587
+Email: Richard.Lammers@unh.edu
+  Web: http://wsag.unh.edu
+
+

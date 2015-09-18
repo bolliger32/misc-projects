@@ -1,0 +1,11 @@
+\contentsline {section}{\numberline {1}Abstract/Introduction}{1}{section.1}
+\contentsline {section}{\numberline {2}Data and Methods}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Mahat and Tarboton (2012) Model}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Model Expansion}{3}{subsection.2.2}
+\contentsline {subsubsection}{\numberline {2.2.1}Separation of Day and Night Regimes}{3}{subsubsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.2}Integration of radiative flux over 24 hours}{4}{subsubsection.2.2.2}
+\contentsline {section}{\numberline {3}Results and Discussion}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Model Face Validity}{6}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Snowpack radiative flux, LAI, and $\theta _s$}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Impact of shrub coverage on daily snowpack radiative influx}{8}{subsection.3.3}
+\contentsline {section}{\numberline {4}Conclusions}{9}{section.4}
