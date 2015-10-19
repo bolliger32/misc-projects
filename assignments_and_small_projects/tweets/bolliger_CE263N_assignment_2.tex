@@ -1,0 +1,738 @@
+
+% Default to the notebook output style
+
+    
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass{article}
+
+    
+    
+    \usepackage{graphicx} % Used to insert images
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{color} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    
+
+    
+    
+    \definecolor{orange}{cmyk}{0,0.4,0.8,0.2}
+    \definecolor{darkorange}{rgb}{.71,0.21,0.01}
+    \definecolor{darkgreen}{rgb}{.12,.54,.11}
+    \definecolor{myteal}{rgb}{.26, .44, .56}
+    \definecolor{gray}{gray}{0.45}
+    \definecolor{lightgray}{gray}{.95}
+    \definecolor{mediumgray}{gray}{.8}
+    \definecolor{inputbackground}{rgb}{.95, .95, .85}
+    \definecolor{outputbackground}{rgb}{.95, .95, .95}
+    \definecolor{traceback}{rgb}{1, .95, .95}
+    % ansi colors
+    \definecolor{red}{rgb}{.6,0,0}
+    \definecolor{green}{rgb}{0,.65,0}
+    \definecolor{brown}{rgb}{0.6,0.6,0}
+    \definecolor{blue}{rgb}{0,.145,.698}
+    \definecolor{purple}{rgb}{.698,.145,.698}
+    \definecolor{cyan}{rgb}{0,.698,.698}
+    \definecolor{lightgray}{gray}{0.5}
+    
+    % bright ansi colors
+    \definecolor{darkgray}{gray}{0.25}
+    \definecolor{lightred}{rgb}{1.0,0.39,0.28}
+    \definecolor{lightgreen}{rgb}{0.48,0.99,0.0}
+    \definecolor{lightblue}{rgb}{0.53,0.81,0.92}
+    \definecolor{lightpurple}{rgb}{0.87,0.63,0.87}
+    \definecolor{lightcyan}{rgb}{0.5,1.0,0.83}
+    
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{bolliger\_CE263N\_assignment\_2}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=blue,
+      linkcolor=darkorange,
+      citecolor=darkgreen,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+    
+    
+    \maketitle
+    
+    
+
+    
+    HW2\\
+CE263N\\
+Ian Bolliger\\
+October 15, 2015
+
+    \subsubsection{Task I}\label{task-i}
+
+    Shapely is a python package that relies on the same geometry engine
+(GEOS) as does PostGIS. It is designed for shorter-term analysis, when
+the management of a large relational database is not part of your
+intentions. It is often quicker to use for ad-hoc spatial analyses, does
+not depend on the (somtimes complicated) creation of the highly
+structured RDBMS, and relies on python idioms that can be more familiar
+and easier to work with than those of the SQL/GIS world. It handles
+operations on \emph{geometries} (points, curves, and surfaces), but not
+\emph{geographies} (in the PostGIS data type sense). It would not be
+suitable for spatial calculations in which your data is highly spatially
+distributed and you need to take into account the spheroid shape of the
+Earth. Since it relies on the same C++ engine (GEOS), I expect the
+performance to be similar to that of PostGIS. However, the documentation
+notes that there is some overhead associated with creating geometries
+involving many coordinates. There is a ``shapely.speedups'' module that
+seems to help with this, but very little information on how this module
+is implemented.
+
+PostGIS, on the other hand, is a RDBMS. It relies on SQL to query data
+and offers the same geometric manipulation tools that Shapely does. In
+addition, it allows the possibility of associating your data with
+spherical (lat/long) coordinates. While shapely works entirely in
+cartesian coordinate systems and does not involve any geographic
+projections, PostGIS allows more rigorous geospatial analysis across the
+globe. It is the better choice if you are managing a database over a
+longer timeframe and will need to query it multiple times in numerous
+different ways. It is also a better choice if your data is highly
+spatially distributed (because of it's spherical representation
+capabilities). It is likely also faster for spatial relational queries
+of large size due to spatial indexing of the database. Because it is
+often time-consuming to set up and requires a specific data format, it
+is likely not the best choice for short, ad-hoc spatial analyses.
+
+Fiona is a python package used for reading and writing data files, and
+it is often used in combination with a tool like shapely. It is useful
+when you want to turn an arbitrary data type (for instance a CSV with
+lat/long columns) into spatial data and to convert between spatial data
+formats.
+
+\textbf{In summary}: For ad-hoc spatial analysis of relatively small
+datasets, the Fiona/Shapely combination is probably the easiest way to
+go. For longer-term projects with spatial data that will require
+database management over time and/or analysis of large amounts of data
+across large geographic scales, inserting your data into a PostGIS
+database and relying on SQL queries is probably the way to go
+
+    \subsubsection{Task II}\label{task-ii}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}91}]:} \PY{c}{\PYZsh{} Imports and settings}
+         \PY{k+kn}{import} \PY{n+nn}{psycopg2}
+         \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k+kn}{as} \PY{n+nn}{np}
+         \PY{k+kn}{import} \PY{n+nn}{pandas} \PY{k+kn}{as} \PY{n+nn}{pd}
+         \PY{k+kn}{import} \PY{n+nn}{datetime}
+         \PY{k+kn}{from} \PY{n+nn}{os.path} \PY{k+kn}{import} \PY{n}{join}
+         \PY{k+kn}{import} \PY{n+nn}{csv}
+         \PY{k+kn}{from} \PY{n+nn}{IPython.display} \PY{k+kn}{import} \PY{n}{Image}\PY{p}{,}\PY{n}{Latex}
+         \PY{k+kn}{from} \PY{n+nn}{sklearn.cluster} \PY{k+kn}{import} \PY{n}{KMeans}\PY{p}{,}\PY{n}{DBSCAN}
+         \PY{k+kn}{from} \PY{n+nn}{pyproj} \PY{k+kn}{import} \PY{n}{Proj}
+         \PY{k+kn}{import} \PY{n+nn}{geojson}
+         \PY{k+kn}{import} \PY{n+nn}{geopandas}
+         \PY{k+kn}{import} \PY{n+nn}{shapely} \PY{k+kn}{as} \PY{n+nn}{shp}
+         
+         \PY{c}{\PYZsh{} SRID for geographic CS (for importing from lat/long)}
+         \PY{n}{SRID\PYZus{}geog} \PY{o}{=} \PY{l+m+mi}{4326}
+         
+         \PY{c}{\PYZsh{} SRID for projection CS (UTM Zone in Northern Cal)}
+         \PY{n}{SRID\PYZus{}proj} \PY{o}{=} \PY{l+m+mi}{32610}
+         
+         \PY{c}{\PYZsh{} random seed}
+         \PY{n}{seed} \PY{o}{=} \PY{l+m+mi}{1234}
+         
+         \PY{c}{\PYZsh{} set filepaths}
+         \PY{n}{data\PYZus{}loc} \PY{o}{=} \PY{l+s}{u\PYZdq{}\PYZdq{}\PYZdq{}}\PY{l+s}{/Users/ianbolliger/Box Sync/grad\PYZus{}school/courses/2015\PYZus{}fall}\PY{l+s+se}{\PYZbs{}}
+         \PY{l+s}{/spatial\PYZus{}analytics/assignments/assignment\PYZus{}2}\PY{l+s}{\PYZdq{}\PYZdq{}\PYZdq{}}
+\end{Verbatim}
+
+    \paragraph{Verify working PostGIS and spatially-enabled
+database}\label{verify-working-postgis-and-spatially-enabled-database}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}93}]:} \PY{n}{conn} \PY{o}{=} \PY{n}{psycopg2}\PY{o}{.}\PY{n}{connect}\PY{p}{(}\PY{l+s}{\PYZdq{}}\PY{l+s}{dbname=template\PYZus{}postgis host=localhost}\PY{l+s}{\PYZdq{}}\PY{p}{)}
+         \PY{n}{cur} \PY{o}{=} \PY{n}{conn}\PY{o}{.}\PY{n}{cursor}\PY{p}{(}\PY{p}{)}
+         \PY{n}{cur}\PY{o}{.}\PY{n}{execute}\PY{p}{(}\PY{l+s}{\PYZdq{}\PYZdq{}\PYZdq{}}\PY{l+s}{SELECT srtext FROM spatial\PYZus{}ref\PYZus{}sys WHERE srid = 32610}\PY{l+s}{\PYZdq{}\PYZdq{}\PYZdq{}}\PY{p}{)}
+         \PY{n}{rows} \PY{o}{=} \PY{n}{cur}\PY{o}{.}\PY{n}{fetchall}\PY{p}{(}\PY{p}{)}
+         \PY{k}{print} \PY{n}{rows}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+         \PY{n}{cur}\PY{o}{.}\PY{n}{close}\PY{p}{(}\PY{p}{)}
+         \PY{n}{conn}\PY{o}{.}\PY{n}{close}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+('PROJCS["WGS 84 / UTM zone 10N",GEOGCS["WGS 84",DATUM["WGS\_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]],UNIT["metre",1,AUTHORITY["EPSG","9001"]],PROJECTION["Transverse\_Mercator"],PARAMETER["latitude\_of\_origin",0],PARAMETER["central\_meridian",-123],PARAMETER["scale\_factor",0.9996],PARAMETER["false\_easting",500000],PARAMETER["false\_northing",0],AUTHORITY["EPSG","32610"],AXIS["Easting",EAST],AXIS["Northing",NORTH]]',)
+    \end{Verbatim}
+
+    \paragraph{1) Create database}\label{create-database}
+\text{> psql
+$ CREATE DATABASE assignment_2 OWNER bolliger TEMPLATE template_postgis ENCODING 'utf8';
+$ \connect assignment_2
+$ CREATE TABLE tweets (
+        id bigint,
+        userid integer,
+        loc geometry,
+        time timestamptz,
+        text text);
+    \paragraph{2) Parse tweets coordinates}\label{parse-tweets-coordinates}}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}2}]:} \PY{c}{\PYZsh{} load data}
+        \PY{n}{tweets} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{read\PYZus{}json}\PY{p}{(}\PY{n}{join}\PY{p}{(}\PY{n}{data\PYZus{}loc}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{tweets\PYZus{}1M.json}\PY{l+s}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+        
+        \PY{c}{\PYZsh{} select 100k subset of tweets}
+        \PY{n}{n\PYZus{}subset} \PY{o}{=} \PY{l+m+mi}{100000}
+        \PY{n}{subset} \PY{o}{=} \PY{n}{tweets}\PY{o}{.}\PY{n}{sample}\PY{p}{(}\PY{n}{n}\PY{o}{=}\PY{n}{n\PYZus{}subset}\PY{p}{,} \PY{n}{random\PYZus{}state}\PY{o}{=}\PY{n}{seed}\PY{p}{)}
+        
+        \PY{c}{\PYZsh{} parse dates}
+        \PY{n}{subset}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{p}{:}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{time}\PY{l+s}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{to\PYZus{}datetime}\PY{p}{(}\PY{n}{subset}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{timeStamp}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+        
+        \PY{c}{\PYZsh{} fix lat/lng format}
+        \PY{n}{subset}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{p}{:}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{loc}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{o}{=}\PY{l+s}{\PYZdq{}}\PY{l+s}{SRID=}\PY{l+s}{\PYZdq{}} \PY{o}{+} \PY{n+nb}{str}\PY{p}{(}\PY{n}{SRID\PYZus{}geog}\PY{p}{)} \PY{o}{+} \PY{l+s}{\PYZdq{}}\PY{l+s}{;POINT(}\PY{l+s}{\PYZdq{}} \PY{o}{+} \PY{n}{subset}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{lng}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{astype}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{string}\PY{l+s}{\PYZsq{}}\PY{p}{)} \PY{o}{+} \PY{l+s}{\PYZsq{}}\PY{l+s}{ }\PY{l+s}{\PYZsq{}} \PY{o}{+} \PY{n}{subset}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{lat}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{astype}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{string}\PY{l+s}{\PYZsq{}}\PY{p}{)} \PY{o}{+} \PY{l+s}{\PYZdq{}}\PY{l+s}{)}\PY{l+s}{\PYZdq{}}
+        
+        \PY{c}{\PYZsh{} keep necessary columns}
+        \PY{n}{subset}\PY{o}{=}\PY{n}{subset}\PY{o}{.}\PY{n}{reindex}\PY{p}{(}\PY{n}{columns}\PY{o}{=}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{id}\PY{l+s}{\PYZsq{}}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{user\PYZus{}id}\PY{l+s}{\PYZsq{}}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{loc}\PY{l+s}{\PYZsq{}}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{time}\PY{l+s}{\PYZsq{}}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{text}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+/Users/ianbolliger/Library/Enthought/Canopy\_64bit/User/lib/python2.7/site-packages/pandas/core/indexing.py:249: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row\_indexer,col\_indexer] = value instead
+
+See the the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html\#indexing-view-versus-copy
+  self.obj[key] = \_infer\_fill\_value(value)
+/Users/ianbolliger/Library/Enthought/Canopy\_64bit/User/lib/python2.7/site-packages/pandas/core/indexing.py:415: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row\_indexer,col\_indexer] = value instead
+
+See the the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html\#indexing-view-versus-copy
+  self.obj[item] = s
+    \end{Verbatim}
+
+    \paragraph{3) Insert 100K tweets into PostGIS
+table}\label{insert-100k-tweets-into-postgis-table}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}94}]:} \PY{c}{\PYZsh{} connect to database}
+         \PY{n}{conn} \PY{o}{=} \PY{n}{psycopg2}\PY{o}{.}\PY{n}{connect}\PY{p}{(}\PY{l+s}{\PYZdq{}}\PY{l+s}{dbname=assignment\PYZus{}2 host=localhost}\PY{l+s}{\PYZdq{}}\PY{p}{)}
+         \PY{n}{cur} \PY{o}{=} \PY{n}{conn}\PY{o}{.}\PY{n}{cursor}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} \PY{c}{\PYZsh{} save as CSV for COPY FROM}
+        \PY{n}{subset}\PY{o}{.}\PY{n}{to\PYZus{}csv}\PY{p}{(}\PY{n}{join}\PY{p}{(}\PY{n}{data\PYZus{}loc}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{tweets.csv}\PY{l+s}{\PYZsq{}}\PY{p}{)}\PY{p}{,}\PY{n}{index}\PY{o}{=}\PY{n+nb+bp}{False}\PY{p}{,} \PY{n}{encoding}\PY{o}{=}\PY{l+s}{\PYZsq{}}\PY{l+s}{utf8}\PY{l+s}{\PYZsq{}}\PY{p}{,}\PY{n}{quoting}\PY{o}{=}\PY{n}{csv}\PY{o}{.}\PY{n}{QUOTE\PYZus{}NONNUMERIC}\PY{p}{)}
+        
+        \PY{c}{\PYZsh{} COPY to postGIS table (could only figure out how to copy if SRID=4326)}
+        \PY{n}{cur}\PY{o}{.}\PY{n}{execute}\PY{p}{(}\PY{l+s}{\PYZdq{}}\PY{l+s}{COPY tweets FROM }\PY{l+s+si}{\PYZpc{}s}\PY{l+s}{ DELIMITER }\PY{l+s}{\PYZsq{}}\PY{l+s}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{ CSV HEADER}\PY{l+s}{\PYZdq{}}\PY{p}{,} \PY{p}{(}\PY{n}{join}\PY{p}{(}\PY{n}{data\PYZus{}loc}\PY{p}{,}\PY{l+s}{\PYZdq{}}\PY{l+s}{tweets.csv}\PY{l+s}{\PYZdq{}}\PY{p}{)}\PY{p}{,}\PY{p}{)}\PY{p}{)}
+        
+        \PY{c}{\PYZsh{} Transform to UTM projection (needed for distance calcs in meters)}
+        \PY{n}{cur}\PY{o}{.}\PY{n}{execute}\PY{p}{(}\PY{l+s}{\PYZdq{}\PYZdq{}\PYZdq{}}\PY{l+s}{ALTER TABLE tweets}
+        \PY{l+s}{                ALTER COLUMN loc TYPE geometry(POINT,}\PY{l+s+si}{\PYZpc{}s}\PY{l+s}{) USING ST\PYZus{}Transform(loc,}\PY{l+s+si}{\PYZpc{}s}\PY{l+s}{)}\PY{l+s}{\PYZdq{}\PYZdq{}\PYZdq{}}\PY{p}{,} \PY{p}{(}\PY{n}{SRID\PYZus{}proj}\PY{p}{,}\PY{n}{SRID\PYZus{}proj}\PY{p}{)}\PY{p}{)}
+        \PY{n}{conn}\PY{o}{.}\PY{n}{commit}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+    \paragraph{5) Convert shapefile into suitable form for database and
+insert}\label{convert-shapefile-into-suitable-form-for-database-and-insert}
+> shp2pgsql -I -W "latin1" -s 4326:32610 tl_2010_06_county10.shp public.ca_census_tract | psql -d assignment_2
+    \paragraph{6) Calculate number of tweets inside Contra Costa
+County}\label{calculate-number-of-tweets-inside-contra-costa-county}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}95}]:} \PY{n}{cur}\PY{o}{.}\PY{n}{execute}\PY{p}{(}\PY{l+s}{\PYZdq{}\PYZdq{}\PYZdq{}}\PY{l+s}{SELECT COUNT(*) from tweets t,ca\PYZus{}census\PYZus{}tract ct}
+         \PY{l+s}{    WHERE }
+         \PY{l+s}{        ct.name10 = }\PY{l+s}{\PYZsq{}}\PY{l+s}{Contra Costa}\PY{l+s}{\PYZsq{}}
+         \PY{l+s}{    AND}
+         \PY{l+s}{        ST\PYZus{}CONTAINS(ct.geom,t.loc)}\PY{l+s}{\PYZdq{}\PYZdq{}\PYZdq{}}\PY{p}{)}
+         \PY{n}{tweets\PYZus{}in\PYZus{}CoCo} \PY{o}{=} \PY{n}{cur}\PY{o}{.}\PY{n}{fetchone}\PY{p}{(}\PY{p}{)}
+         \PY{k}{print} \PY{l+s}{\PYZdq{}}\PY{l+s}{tweets from 100K subset that fall within Contra Costa County:}\PY{l+s}{\PYZdq{}}\PY{p}{,} \PY{n}{tweets\PYZus{}in\PYZus{}CoCo}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+tweets from 100K subset that fall within Contra Costa County: 8563
+    \end{Verbatim}
+
+    \paragraph{7) Calculate number of tweets 100 miles outside Alameda
+County}\label{calculate-number-of-tweets-100-miles-outside-alameda-county}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}96}]:} \PY{c}{\PYZsh{} 100 miles = 160934 meters}
+         
+         \PY{n}{cur}\PY{o}{.}\PY{n}{execute}\PY{p}{(}\PY{l+s}{\PYZdq{}\PYZdq{}\PYZdq{}}\PY{l+s}{SELECT COUNT(*) FROM tweets t, ca\PYZus{}census\PYZus{}tract ct}
+         \PY{l+s}{    WHERE}
+         \PY{l+s}{        ct.name10 = }\PY{l+s}{\PYZsq{}}\PY{l+s}{Alameda}\PY{l+s}{\PYZsq{}}
+         \PY{l+s}{    AND NOT}
+         \PY{l+s}{        ST\PYZus{}DWITHIN(t.loc,ct.geom,160934)}\PY{l+s}{\PYZdq{}\PYZdq{}\PYZdq{}}\PY{p}{)}
+         \PY{n}{tweets\PYZus{}outside\PYZus{}AC} \PY{o}{=} \PY{n}{cur}\PY{o}{.}\PY{n}{fetchone}\PY{p}{(}\PY{p}{)}
+         \PY{k}{print} \PY{l+s}{\PYZdq{}}\PY{l+s}{tweets from 100K subset that fall 100 miles outside of Alameda County:}\PY{l+s}{\PYZdq{}}\PY{p}{,} \PY{n}{tweets\PYZus{}outside\PYZus{}AC}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+tweets from 100K subset that fall 100 miles outside of Alameda County: 14705
+    \end{Verbatim}
+
+    \paragraph{8) Insert 2010 Census pop per county into
+database}\label{insert-2010-census-pop-per-county-into-database}
+> psql assignment_2
+$ CREATE TABLE ca_census_data
+    (GEOID varchar(11),
+    SUMLEV varchar(3),
+    STATE varchar(2),
+    COUNTY varchar(3),
+    CBSA varchar(5),
+    CSA varchar(3),
+    NECTA integer,
+    CNECTA integer,
+    NAME varchar(30),
+    POP100 integer,
+    HU100 integer,
+    POP1002000 integer,
+    HU1002000 integer,
+    P001001 integer,
+    P0010012000 integer);
+$ COPY ca_census_data FROM '/Users/ianbolliger/Box Sync/grad_school/courses/2015_fall/spatial_analytics/assignments/assignment_2' CSV HEADER;
+    \paragraph{9) Provide visualization of tweets
+per-capita}\label{provide-visualization-of-tweets-per-capita}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} \PY{n}{cur}\PY{o}{.}\PY{n}{execute}\PY{p}{(}\PY{l+s}{\PYZdq{}\PYZdq{}\PYZdq{}}\PY{l+s}{CREATE TABLE tweets\PYZus{}pc AS}
+        
+        \PY{l+s}{WITH n\PYZus{}tweets as (}
+        \PY{l+s}{SELECT ct.name10,ct.countyfp10,COUNT(t.loc) as tweets\PYZus{}per\PYZus{}county,ct.geom}
+        \PY{l+s}{    FROM tweets t}
+        \PY{l+s}{    RIGHT JOIN ca\PYZus{}census\PYZus{}tract ct}
+        \PY{l+s}{        ON ST\PYZus{}CONTAINS(ct.geom,t.loc)}
+        \PY{l+s}{    GROUP BY ct.countyfp10,ct.name10,ct.geom)}
+        
+        
+        \PY{l+s}{SELECT n\PYZus{}tweets.name10,n\PYZus{}tweets.tweets\PYZus{}per\PYZus{}county/cd.pop100::float as tweets\PYZus{}per\PYZus{}capita,n\PYZus{}tweets.geom}
+        \PY{l+s}{    FROM n\PYZus{}tweets}
+        \PY{l+s}{    INNER JOIN ca\PYZus{}census\PYZus{}data as cd}
+        \PY{l+s}{        ON cd.county = n\PYZus{}tweets.countyfp10}\PY{l+s}{\PYZdq{}\PYZdq{}\PYZdq{}}\PY{p}{)}
+        \PY{n}{conn}\PY{o}{.}\PY{n}{commit}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+
+    The following visualization was constructed in QGIS from the
+``tweets\_pc'' table constructed above
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}97}]:} \PY{n}{Image}\PY{p}{(}\PY{n}{join}\PY{p}{(}\PY{n}{data\PYZus{}loc}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{tpc.png}\PY{l+s}{\PYZsq{}}\PY{p}{)}\PY{p}{)}
+\end{Verbatim}
+\texttt{\color{outcolor}Out[{\color{outcolor}97}]:}
+    
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{bolliger_CE263N_assignment_2_files/bolliger_CE263N_assignment_2_25_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+
+    \paragraph{10) Find radii of DBSCAN tweet
+clusters}\label{find-radii-of-dbscan-tweet-clusters}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}98}]:} \PY{c}{\PYZsh{} Take 10k sample of tweets}
+         \PY{n}{subset\PYZus{}10} \PY{o}{=} \PY{n}{tweets}\PY{o}{.}\PY{n}{sample}\PY{p}{(}\PY{n}{n}\PY{o}{=}\PY{l+m+mi}{10000}\PY{p}{,} \PY{n}{random\PYZus{}state}\PY{o}{=}\PY{n}{seed}\PY{p}{)}
+         
+         \PY{c}{\PYZsh{} Project into UTM system}
+         \PY{n}{myProj} \PY{o}{=} \PY{n}{Proj}\PY{p}{(}\PY{l+s}{\PYZdq{}}\PY{l+s}{+proj=utm +zone=10 +ellps=WGS84 +datum=WGS84}\PY{l+s}{\PYZdq{}}\PY{p}{)}
+         \PY{n}{UTMx}\PY{p}{,}\PY{n}{UTMy} \PY{o}{=} \PY{n}{myProj}\PY{p}{(}\PY{n}{subset\PYZus{}10}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{lng}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{values}\PY{p}{,}\PY{n}{subset\PYZus{}10}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{lat}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{values}\PY{p}{)}
+         \PY{n}{subset\PYZus{}10}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{m\PYZus{}N}\PY{l+s}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{UTMy}
+         \PY{n}{subset\PYZus{}10}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{m\PYZus{}E}\PY{l+s}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{UTMx}
+         \PY{n}{coords} \PY{o}{=} \PY{n}{subset\PYZus{}10}\PY{p}{[}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{m\PYZus{}N}\PY{l+s}{\PYZsq{}}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{m\PYZus{}E}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+         
+         \PY{c}{\PYZsh{} Run DBSCAN}
+         \PY{n}{eps} \PY{o}{=} \PY{l+m+mi}{1000} \PY{c}{\PYZsh{}meters}
+         \PY{n}{min\PYZus{}samples} \PY{o}{=} \PY{l+m+mi}{10}
+         
+         \PY{n}{db} \PY{o}{=} \PY{n}{DBSCAN}\PY{p}{(}\PY{n}{eps}\PY{o}{=}\PY{n}{eps}\PY{p}{,} \PY{n}{min\PYZus{}samples}\PY{o}{=}\PY{n}{min\PYZus{}samples}\PY{p}{)}
+         \PY{n}{coords}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{labels}\PY{l+s}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{db}\PY{o}{.}\PY{n}{fit\PYZus{}predict}\PY{p}{(}\PY{n}{coords}\PY{p}{)}
+         
+         \PY{c}{\PYZsh{} keep non\PYZhy{}outliered points}
+         \PY{n}{coords} \PY{o}{=} \PY{n}{coords}\PY{p}{[}\PY{n}{coords}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{labels}\PY{l+s}{\PYZsq{}}\PY{p}{]} \PY{o}{!=} \PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}
+         
+         \PY{c}{\PYZsh{} count number of non\PYZhy{}outlier points}
+         \PY{n}{n} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{count\PYZus{}nonzero}\PY{p}{(}\PY{n}{db}\PY{o}{.}\PY{n}{labels\PYZus{}} \PY{o}{+} \PY{l+m+mi}{1}\PY{p}{)}
+         \PY{k}{print} \PY{l+s}{\PYZdq{}}\PY{l+s}{non\PYZhy{}outliers:}\PY{l+s}{\PYZdq{}}\PY{p}{,} \PY{n}{n}
+         
+         \PY{c}{\PYZsh{} count number of clusters}
+         \PY{n}{n\PYZus{}clust} \PY{o}{=} \PY{n+nb}{len}\PY{p}{(}\PY{n+nb}{set}\PY{p}{(}\PY{n}{coords}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{labels}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{)}
+         \PY{k}{print} \PY{l+s}{\PYZdq{}}\PY{l+s}{number of clusters:}\PY{l+s}{\PYZdq{}}\PY{p}{,} \PY{n}{n\PYZus{}clust}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+/Users/ianbolliger/Library/Enthought/Canopy\_64bit/User/lib/python2.7/site-packages/ipykernel/\_\_main\_\_.py:7: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row\_indexer,col\_indexer] = value instead
+
+See the the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html\#indexing-view-versus-copy
+/Users/ianbolliger/Library/Enthought/Canopy\_64bit/User/lib/python2.7/site-packages/ipykernel/\_\_main\_\_.py:8: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row\_indexer,col\_indexer] = value instead
+
+See the the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html\#indexing-view-versus-copy
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+non-outliers: 7112
+number of clusters: 130
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+/Users/ianbolliger/Library/Enthought/Canopy\_64bit/User/lib/python2.7/site-packages/ipykernel/\_\_main\_\_.py:16: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row\_indexer,col\_indexer] = value instead
+
+See the the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html\#indexing-view-versus-copy
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}99}]:} \PY{c}{\PYZsh{} find centroids}
+         \PY{n}{grouped} \PY{o}{=} \PY{n}{coords}\PY{o}{.}\PY{n}{groupby}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{labels}\PY{l+s}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{centroids} \PY{o}{=} \PY{n}{grouped}\PY{o}{.}\PY{n}{mean}\PY{p}{(}\PY{p}{)}
+         \PY{n}{counts} \PY{o}{=} \PY{n}{grouped}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{m\PYZus{}N}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{count}\PY{p}{(}\PY{p}{)}
+         \PY{n}{dists} \PY{o}{=} \PY{n}{coords}\PY{o}{.}\PY{n}{join}\PY{p}{(}\PY{n}{centroids}\PY{p}{,}\PY{n}{on}\PY{o}{=}\PY{l+s}{\PYZsq{}}\PY{l+s}{labels}\PY{l+s}{\PYZsq{}}\PY{p}{,}\PY{n}{rsuffix}\PY{o}{=}\PY{l+s}{\PYZsq{}}\PY{l+s}{\PYZus{}centroid}\PY{l+s}{\PYZsq{}}\PY{p}{)}\PY{o}{.}\PY{n}{join}\PY{p}{(}\PY{n}{counts}\PY{p}{,}\PY{n}{on}\PY{o}{=}\PY{l+s}{\PYZsq{}}\PY{l+s}{labels}\PY{l+s}{\PYZsq{}}\PY{p}{,}\PY{n}{rsuffix}\PY{o}{=}\PY{l+s}{\PYZsq{}}\PY{l+s}{count}\PY{l+s}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{dists}\PY{o}{.}\PY{n}{rename}\PY{p}{(}\PY{n}{columns}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s}{\PYZsq{}}\PY{l+s}{m\PYZus{}Ncount}\PY{l+s}{\PYZsq{}}\PY{p}{:}\PY{l+s}{\PYZsq{}}\PY{l+s}{n\PYZus{}tweets}\PY{l+s}{\PYZsq{}}\PY{p}{\PYZcb{}}\PY{p}{)}
+         
+         \PY{c}{\PYZsh{} calc distance}
+         \PY{n}{dists}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{dist}\PY{l+s}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{sqrt}\PY{p}{(}\PY{p}{(}\PY{n}{dists}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{m\PYZus{}N}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{n}{dists}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{m\PYZus{}N\PYZus{}centroid}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{o}{*}\PY{o}{*}\PY{l+m+mi}{2} \PY{o}{+} \PY{p}{(}\PY{n}{dists}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{m\PYZus{}E}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{o}{\PYZhy{}}\PY{n}{dists}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{m\PYZus{}E\PYZus{}centroid}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{o}{*}\PY{o}{*}\PY{l+m+mi}{2}\PY{p}{)}
+         \PY{n}{dists}\PY{o}{.}\PY{n}{head}\PY{p}{(}\PY{p}{)}
+         
+         \PY{c}{\PYZsh{} calc min radius and total tweets for each cluster}
+         \PY{n}{grouped} \PY{o}{=} \PY{n}{dists}\PY{p}{[}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{labels}\PY{l+s}{\PYZsq{}}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{dist}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{p}{]}\PY{o}{.}\PY{n}{groupby}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{labels}\PY{l+s}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{rad} \PY{o}{=} \PY{n}{grouped}\PY{o}{.}\PY{n}{max}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{rename}\PY{p}{(}\PY{n}{columns}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s}{\PYZsq{}}\PY{l+s}{dist}\PY{l+s}{\PYZsq{}}\PY{p}{:}\PY{l+s}{\PYZsq{}}\PY{l+s}{Minimum Radius (m)}\PY{l+s}{\PYZsq{}}\PY{p}{\PYZcb{}}\PY{p}{)}
+         \PY{n}{n\PYZus{}tweets} \PY{o}{=} \PY{n}{grouped}\PY{o}{.}\PY{n}{count}\PY{p}{(}\PY{p}{)}\PY{o}{.}\PY{n}{rename}\PY{p}{(}\PY{n}{columns}\PY{o}{=}\PY{p}{\PYZob{}}\PY{l+s}{\PYZsq{}}\PY{l+s}{dist}\PY{l+s}{\PYZsq{}}\PY{p}{:}\PY{l+s}{\PYZsq{}}\PY{l+s}{\PYZsh{} Tweets}\PY{l+s}{\PYZsq{}}\PY{p}{\PYZcb{}}\PY{p}{)}
+         
+         \PY{c}{\PYZsh{} show table}
+         \PY{n}{tab} \PY{o}{=} \PY{n}{rad}\PY{o}{.}\PY{n}{join}\PY{p}{(}\PY{n}{n\PYZus{}tweets}\PY{p}{)}\PY{o}{.}\PY{n}{sort}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{Minimum Radius (m)}\PY{l+s}{\PYZsq{}}\PY{p}{,}\PY{n}{ascending}\PY{o}{=}\PY{n+nb+bp}{False}\PY{p}{)}
+         \PY{n}{tab}\PY{o}{.}\PY{n}{index}\PY{o}{.}\PY{n}{name} \PY{o}{=} \PY{l+s}{\PYZsq{}}\PY{l+s}{Cluster ID}\PY{l+s}{\PYZsq{}}
+         \PY{n}{tab}
+\end{Verbatim}
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}99}]:}             Minimum Radius (m)  \# Tweets
+         Cluster ID                              
+         5                 15677.547659      1855
+         7                 12611.359454       741
+         9                  9366.779802       491
+         10                 7168.443022       291
+         2                  6916.984122       374
+         19                 4171.985760       120
+         6                  3807.824169       133
+         15                 3669.997566        60
+         22                 3281.394015        56
+         0                  3225.635302       109
+         50                 3201.873646        69
+         18                 3180.807581       178
+         31                 2751.790676        54
+         4                  2742.691951        94
+         61                 2691.900245        54
+         27                 2683.740725        59
+         17                 2489.653514       134
+         26                 2478.009602        54
+         76                 2424.820929        35
+         43                 2338.827933        41
+         57                 2300.478824        45
+         77                 2298.757263        30
+         12                 2173.854174        33
+         35                 2028.933056        34
+         66                 1997.171938        51
+         25                 1979.063791        50
+         34                 1974.585020        37
+         39                 1969.756963        24
+         3                  1921.529948        35
+         67                 1918.196101        29
+         {\ldots}                        {\ldots}       {\ldots}
+         52                  833.975047        31
+         65                  833.079881        10
+         63                  822.960700        13
+         114                 815.133072        10
+         112                 810.199699        10
+         72                  801.710460        15
+         90                  788.716080        11
+         115                 787.457202         8
+         129                 782.635846        10
+         80                  749.116858        10
+         46                  746.188586        11
+         33                  724.672144        47
+         93                  709.597055        15
+         69                  662.855315        14
+         108                 643.775771         8
+         79                  628.589850        14
+         116                 619.607035        10
+         96                  607.513054         7
+         45                  566.462169        17
+         44                  552.577456        17
+         14                  511.623129        27
+         105                 505.918140        11
+         29                  503.455809        19
+         83                  324.436040        10
+         85                  317.449818        20
+         74                  287.319839        10
+         30                  282.659492        12
+         13                  236.817763        12
+         109                  28.466873        10
+         68                   22.940870        11
+         
+         [130 rows x 2 columns]
+\end{Verbatim}
+        
+    \subsubsection{Task III}\label{task-iii}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}77}]:} \PY{c}{\PYZsh{} Connect to MongoDB Instance and set up database and collection}
+         \PY{k+kn}{from} \PY{n+nn}{pymongo} \PY{k+kn}{import} \PY{n}{MongoClient}
+         \PY{k+kn}{import} \PY{n+nn}{pymongo}
+         \PY{n}{mongo\PYZus{}client} \PY{o}{=} \PY{n}{MongoClient}\PY{p}{(}\PY{p}{)}
+         \PY{n}{mongo\PYZus{}db} \PY{o}{=} \PY{n}{mongo\PYZus{}client}\PY{o}{.}\PY{n}{san\PYZus{}francisco\PYZus{}db}
+         \PY{n}{tweets\PYZus{}col} \PY{o}{=} \PY{n}{mongo\PYZus{}db}\PY{o}{.}\PY{n}{tweets}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}5}]:} \PY{c}{\PYZsh{}\PYZsh{} cluster using 2\PYZhy{}step algorithm from HW1}
+        
+        \PY{c}{\PYZsh{} Project into UTM system}
+        \PY{n}{myProj} \PY{o}{=} \PY{n}{Proj}\PY{p}{(}\PY{l+s}{\PYZdq{}}\PY{l+s}{+proj=utm +zone=10 +ellps=WGS84 +datum=WGS84}\PY{l+s}{\PYZdq{}}\PY{p}{)}
+        \PY{n}{UTMx}\PY{p}{,}\PY{n}{UTMy} \PY{o}{=} \PY{n}{myProj}\PY{p}{(}\PY{n}{tweets}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{lng}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{values}\PY{p}{,}\PY{n}{tweets}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{lat}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{values}\PY{p}{)}
+        \PY{n}{coords} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{p}{\PYZob{}}\PY{l+s}{\PYZsq{}}\PY{l+s}{m\PYZus{}E}\PY{l+s}{\PYZsq{}}\PY{p}{:}\PY{n}{UTMx}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{m\PYZus{}N}\PY{l+s}{\PYZsq{}}\PY{p}{:}\PY{n}{UTMy}\PY{p}{\PYZcb{}}\PY{p}{)}
+        \PY{n}{tweets}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{m\PYZus{}N}\PY{l+s}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{UTMy}
+        \PY{n}{tweets}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{m\PYZus{}E}\PY{l+s}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{UTMx}
+        \PY{n}{coords} \PY{o}{=} \PY{n}{tweets}\PY{p}{[}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{m\PYZus{}N}\PY{l+s}{\PYZsq{}}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{m\PYZus{}E}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{p}{]}
+        
+        \PY{c}{\PYZsh{} parameters}
+        \PY{n}{k1} \PY{o}{=} \PY{l+m+mi}{2}
+        \PY{n}{e} \PY{o}{=} \PY{l+m+mi}{100} \PY{c}{\PYZsh{} 100 meter epsilon}
+        \PY{n}{min\PYZus{}samples} \PY{o}{=} \PY{l+m+mi}{100}
+        
+        \PY{c}{\PYZsh{} initialize algorithms object}
+        \PY{n}{km} \PY{o}{=} \PY{n}{KMeans}\PY{p}{(}\PY{n}{init}\PY{o}{=}\PY{l+s}{\PYZsq{}}\PY{l+s}{k\PYZhy{}means++}\PY{l+s}{\PYZsq{}}\PY{p}{,} \PY{n}{n\PYZus{}clusters}\PY{o}{=}\PY{n}{k1}\PY{p}{,} \PY{n}{random\PYZus{}state}\PY{o}{=}\PY{n}{seed}\PY{p}{)}
+        \PY{n}{db} \PY{o}{=} \PY{n}{DBSCAN}\PY{p}{(}\PY{n}{eps}\PY{o}{=}\PY{n}{e}\PY{p}{,} \PY{n}{min\PYZus{}samples}\PY{o}{=}\PY{n}{min\PYZus{}samples}\PY{p}{)}
+        
+        \PY{c}{\PYZsh{} copy coordinates so that we can assign clusters in new dataframe}
+        \PY{n}{data} \PY{o}{=} \PY{n}{coords}\PY{o}{.}\PY{n}{copy}\PY{p}{(}\PY{p}{)}
+        \PY{n}{data}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{cluster2}\PY{l+s}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{nan}
+        
+        \PY{c}{\PYZsh{} run step 1}
+        \PY{n}{km}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{coords}\PY{p}{)}
+        \PY{n}{data}\PY{o}{.}\PY{n}{loc}\PY{p}{[}\PY{p}{:}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{cluster1}\PY{l+s}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{Series}\PY{p}{(}\PY{n}{km}\PY{o}{.}\PY{n}{labels\PYZus{}}\PY{p}{,} \PY{n}{index} \PY{o}{=} \PY{n}{data}\PY{o}{.}\PY{n}{index}\PY{p}{)}
+            
+        \PY{c}{\PYZsh{} run DBSCAN on each cluster}
+        \PY{k}{for} \PY{n}{c} \PY{o+ow}{in} \PY{n+nb}{range}\PY{p}{(}\PY{n}{k1}\PY{p}{)}\PY{p}{:}
+            \PY{n}{ss} \PY{o}{=} \PY{n}{coords}\PY{p}{[}\PY{n}{data}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{cluster1}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{o}{==}\PY{n}{c}\PY{p}{]}
+            \PY{n}{db}\PY{o}{.}\PY{n}{fit}\PY{p}{(}\PY{n}{ss}\PY{p}{)}
+            \PY{n}{ss} \PY{o}{=} \PY{n}{pd}\PY{o}{.}\PY{n}{DataFrame}\PY{p}{(}\PY{p}{\PYZob{}}\PY{l+s}{\PYZsq{}}\PY{l+s}{cluster2}\PY{l+s}{\PYZsq{}}\PY{p}{:}\PY{n}{db}\PY{o}{.}\PY{n}{labels\PYZus{}}\PY{p}{\PYZcb{}}\PY{p}{,} \PY{n}{index} \PY{o}{=} \PY{n}{ss}\PY{o}{.}\PY{n}{index}\PY{p}{)}
+            \PY{n}{data} \PY{o}{=} \PY{n}{data}\PY{o}{.}\PY{n}{combine\PYZus{}first}\PY{p}{(}\PY{n}{ss}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}28}]:} \PY{c}{\PYZsh{} merge cluster data back into tweets dataframe}
+         \PY{n}{non\PYZus{}outliers} \PY{o}{=} \PY{n}{data}\PY{p}{[}\PY{n}{data}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{cluster2}\PY{l+s}{\PYZsq{}}\PY{p}{]} \PY{o}{!=} \PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{p}{]}
+         \PY{n}{non\PYZus{}outliers}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{cluster2}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{o}{=}\PY{n}{non\PYZus{}outliers}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{cluster2}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{astype}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{int}\PY{l+s}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{non\PYZus{}outliers}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{cluster\PYZus{}ID}\PY{l+s}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{non\PYZus{}outliers}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{cluster1}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{astype}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{string}\PY{l+s}{\PYZsq{}}\PY{p}{)} \PY{o}{+} \PY{l+s}{\PYZdq{}}\PY{l+s}{\PYZhy{}}\PY{l+s}{\PYZdq{}} \PY{o}{+} \PY{n}{non\PYZus{}outliers}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{cluster2}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{o}{.}\PY{n}{astype}\PY{p}{(}\PY{l+s}{\PYZsq{}}\PY{l+s}{string}\PY{l+s}{\PYZsq{}}\PY{p}{)}
+         \PY{n}{clustered\PYZus{}tweets} \PY{o}{=} \PY{n}{tweets}\PY{p}{[}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{user\PYZus{}id}\PY{l+s}{\PYZsq{}}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{timeStamp}\PY{l+s}{\PYZsq{}}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{text}\PY{l+s}{\PYZsq{}}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{lng}\PY{l+s}{\PYZsq{}}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{lat}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{p}{]}\PY{o}{.}\PY{n}{join}\PY{p}{(}\PY{n}{non\PYZus{}outliers}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{cluster\PYZus{}ID}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{how}\PY{o}{=}\PY{l+s}{\PYZsq{}}\PY{l+s}{right}\PY{l+s}{\PYZsq{}}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+/Users/ianbolliger/Library/Enthought/Canopy\_64bit/User/lib/python2.7/site-packages/ipykernel/\_\_main\_\_.py:3: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row\_indexer,col\_indexer] = value instead
+
+See the the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html\#indexing-view-versus-copy
+  app.launch\_new\_instance()
+/Users/ianbolliger/Library/Enthought/Canopy\_64bit/User/lib/python2.7/site-packages/ipykernel/\_\_main\_\_.py:4: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row\_indexer,col\_indexer] = value instead
+
+See the the caveats in the documentation: http://pandas.pydata.org/pandas-docs/stable/indexing.html\#indexing-view-versus-copy
+    \end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}85}]:} \PY{c}{\PYZsh{} load data into GeoDataFrame}
+         \PY{n}{tweets\PYZus{}gdf} \PY{o}{=} \PY{n}{geopandas}\PY{o}{.}\PY{n}{GeoDataFrame}\PY{p}{(}\PY{n}{clustered\PYZus{}tweets}\PY{p}{[}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{timeStamp}\PY{l+s}{\PYZsq{}}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{text}\PY{l+s}{\PYZsq{}}\PY{p}{,}\PY{l+s}{\PYZsq{}}\PY{l+s}{cluster\PYZus{}ID}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{p}{]}\PY{p}{)}
+         \PY{n}{tweets\PYZus{}gdf}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{geometry}\PY{l+s}{\PYZsq{}}\PY{p}{]} \PY{o}{=} \PY{n}{geopandas}\PY{o}{.}\PY{n}{GeoSeries}\PY{p}{(}\PY{p}{[}\PY{n}{shp}\PY{o}{.}\PY{n}{geometry}\PY{o}{.}\PY{n}{Point}\PY{p}{(}\PY{n}{x}\PY{p}{,}\PY{n}{y}\PY{p}{)}\PY{k}{for} \PY{n}{x}\PY{p}{,}\PY{n}{y} \PY{o+ow}{in} \PY{n+nb}{zip}\PY{p}{(}\PY{n}{clustered\PYZus{}tweets}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{lng}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{clustered\PYZus{}tweets}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{lat}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{p}{)}\PY{p}{]}\PY{p}{,}\PY{n}{index}\PY{o}{=}\PY{n}{tweets\PYZus{}gdf}\PY{o}{.}\PY{n}{index}\PY{p}{)}
+         
+         \PY{c}{\PYZsh{} convert timestamp to datetime (disabled b/c GeoJSON can\PYZsq{}t take timestamps)}
+         \PY{c}{\PYZsh{}tweets\PYZus{}gdf[\PYZsq{}timeStamp\PYZsq{}] = pd.to\PYZus{}datetime(tweets\PYZus{}gdf[\PYZsq{}timeStamp\PYZsq{}])}
+         
+         \PY{c}{\PYZsh{} dumps to geoJSON}
+         \PY{n}{tweets\PYZus{}gj} \PY{o}{=} \PY{n}{tweets\PYZus{}gdf}\PY{o}{.}\PY{n}{to\PYZus{}json}\PY{p}{(}\PY{p}{)}
+         \PY{n}{tweets\PYZus{}gj} \PY{o}{=} \PY{n}{geojson}\PY{o}{.}\PY{n}{loads}\PY{p}{(}\PY{n}{tweets\PYZus{}gj}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor}90}]:} \PY{c}{\PYZsh{} Insert into DB}
+         \PY{k}{for} \PY{n}{i} \PY{o+ow}{in} \PY{n}{tweets\PYZus{}gj}\PY{p}{[}\PY{l+s}{\PYZsq{}}\PY{l+s}{features}\PY{l+s}{\PYZsq{}}\PY{p}{]}\PY{p}{:}
+             \PY{n}{tweets\PYZus{}db}\PY{o}{.}\PY{n}{insert}\PY{p}{(}\PY{n}{i}\PY{p}{)}
+\end{Verbatim}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+{\color{incolor}In [{\color{incolor} }]:} 
+\end{Verbatim}
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}
