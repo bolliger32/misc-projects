@@ -1,44 +1,45 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  9 MAY 2015 00:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  11 DEC 2015 12:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **IB_final_project.tex
 (./IB_final_project.tex
-LaTeX2e <2014/05/01>
-Babel <3.9k> and hyphenation patterns for 78 languages loaded.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrartcl.cls
-Document Class: scrartcl 2013/12/19 v3.12 KOMA-Script document class (article)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2013/12/19 v3.12 KOMA-Script package (KOMA-Script-dependent b
-asics and keyval usage)
+LaTeX2e <2015/01/01>
+Babel <3.9l> and hyphenation patterns for 79 languages loaded.
+(/usr/local/texlive/2015/texmf-dist/tex/latex/koma-script/scrartcl.cls
+Document Class: scrartcl 2015/05/06 v3.17a KOMA-Script document class (article)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2013/12/19 v3.12 KOMA-Script package (KOMA-Script-independent 
+(/usr/local/texlive/2015/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2015/05/06 v3.17a KOMA-Script package (KOMA-Script-dependent 
 basics and keyval usage)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2014/05/08 v1.15 key=value parser (DPC)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2015/05/06 v3.17a KOMA-Script package (KOMA-Script-independent
+ basics and keyval usage)
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2013/12/19 v3.12 KOMA-Script package (loading files)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2015/05/06 v3.17a KOMA-Script package (loading files)
 
-Package scrlfile, 2013/12/19 v3.12 KOMA-Script package (loading files)
+Package scrlfile, 2015/05/06 v3.17a KOMA-Script package (loading files)
                   Copyright (C) Markus Kohm
 
-))) (/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/tocbasic.sty
-Package: tocbasic 2013/12/19 v3.12 KOMA-Script package (handling toc-files)
+))) (/usr/local/texlive/2015/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2015/05/06 v3.17a KOMA-Script package (handling toc-files)
 )
 Package tocbasic Info: omitting babel extension for `toc'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `toc' on input line 115.
+(tocbasic)             for `toc' on input line 122.
 Package tocbasic Info: omitting babel extension for `lof'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lof' on input line 116.
+(tocbasic)             for `lof' on input line 123.
 Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
-(tocbasic)             for `lot' on input line 117.
+(tocbasic)             for `lot' on input line 124.
 Package scrartcl Info: You've used standard option `10pt'.
 (scrartcl)             This is correct!
 (scrartcl)             Internally I'm using `fontsize=10pt'.
@@ -51,24 +52,17 @@ Class scrartcl Info: You've used standard option `oneside'.
 (scrartcl)           If you'd like to set the option with \KOMAoptions,
 (scrartcl)           you'd have to use `twoside=false' there
 (scrartcl)           instead of `oneside', too.
-Package scrbase Info: Unknown processing state.
-(scrbase)             Processing option `twoside=false'
-(scrbase)             of member `.scrartcl.cls'
-(scrbase)             of family `KOMA'
-(scrbase)             doesn't set a valid state.
-(scrbase)             This will be interpreted
-(scrbase)             as \FamilyKeyStateProcessed on input line 1150.
 Class scrartcl Info: File `scrsize10pt.clo' used to setup font sizes on input l
-ine 1531.
+ine 1942.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrsize10pt.clo
-File: scrsize10pt.clo 2013/12/19 v3.12 KOMA-Script font size class option (10pt
+(/usr/local/texlive/2015/texmf-dist/tex/latex/koma-script/scrsize10pt.clo
+File: scrsize10pt.clo 2015/05/06 v3.17a KOMA-Script font size class option (10p
+t)
 )
-)
-(/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/typearea.sty
-Package: typearea 2013/12/19 v3.12 KOMA-Script package (type area)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2015/05/06 v3.17a KOMA-Script package (type area)
 
-Package typearea, 2013/12/19 v3.12 KOMA-Script package (type area)
+Package typearea, 2015/05/06 v3.17a KOMA-Script package (type area)
                   Copyright (C) Frank Neukam, 1992-1994
                   Copyright (C) Markus Kohm, 1994-
 
@@ -106,7 +100,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \topskip        = 10.0pt
 (typearea)              \footskip       = 42.0pt
 (typearea)              \baselineskip   = 12.0pt
-(typearea)              on input line 1330.
+(typearea)              on input line 1485.
 )
 \c@part=\count80
 \c@section=\count81
@@ -114,6 +108,7 @@ Package typearea Info: These are the values describing the layout:
 \c@subsubsection=\count83
 \c@paragraph=\count84
 \c@subparagraph=\count85
+LaTeX Info: Redefining \textsubscript on input line 3718.
 \abovecaptionskip=\skip46
 \belowcaptionskip=\skip47
 \c@pti@nb@sid@b@x=\box26
@@ -121,30 +116,30 @@ Package typearea Info: These are the values describing the layout:
 \c@table=\count87
 \bibindent=\dimen102
 ) (./structure.tex
-(/usr/local/texlive/2014/texmf-dist/tex/latex/classicthesis/classicthesis.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/classicthesis/classicthesis.sty
 Package: classicthesis 2012/08/12 v4.1 Typographic style for a classic-looking 
 thesis
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
 Package classicthesis Info: Using option "nochapters" (probably for an article)
 . This turns off the options "linedheaders", "manychapters", "floatperchapter",
 "listsseparated", "eulerchapternumbers", and "parts". Please be aware of that. 
 on input line 156.
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
 Package ifpdf Info: pdfTeX in PDF mode is detected.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
@@ -184,25 +179,25 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/auxhook.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen103
 \Hy@linkcounter=\count88
 \Hy@pagecounter=\count89
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/pd1enc.def
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count90
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4443.
@@ -214,7 +209,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count91
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/url/url.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -239,27 +234,27 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/hpdftex.def
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count96
 \c@bookmark@seq@number=\count97
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip48
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 \Gread@gobject=\count98
 )
@@ -273,20 +268,20 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/dvipsnam.def
-File: dvipsnam.def 2014/04/23 v3.0j Driver-dependant file (DPC,SPQR)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2014/10/14 v3.0j Driver-dependent file (DPC,SPQR)
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/mathpazo.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/mathpazo.sty
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/bera/beramono.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/bera/beramono.sty
 Package: beramono 2004/01/31 (WaS)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/eulervm.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/eulervm/eulervm.sty
 Package: eulervm 2005/01/11 v4.0 (WaS)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/microtype.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2013/05/23 v2.5a Micro-typographical refinements (RS)
 \MT@toks=\toks15
 \MT@count=\count99
@@ -295,7 +290,7 @@ LaTeX Info: Redefining \textls on input line 766.
 LaTeX Info: Redefining \textmicrotypecontext on input line 1285.
 \MT@listname@count=\count100
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2013/05/23 v2.5a Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 915.
@@ -304,7 +299,7 @@ LaTeX Info: Redefining \lslig on input line 915.
 )
 Package microtype Info: Loading configuration file microtype.cfg.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/microtype.cfg
+(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2013/05/23 v2.5a microtype main configuration file (RS)
 ))
 Package classicthesis Info: A4 paper, Palatino or other on input line 270.
@@ -325,7 +320,7 @@ Package typearea Info: These are the values describing the layout:
 (typearea)              \baselineskip   = 12.0pt
 (typearea)              on input line 270.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/booktabs/booktabs.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen108
 \lightrulewidth=\dimen109
@@ -345,14 +340,14 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \@lastruleclass=\count104
 \@thisrulewidth=\dimen120
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/textcase/textcase.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
 )
 Package classicthesis Info: Using pdftex/microtype for character spacing.Make s
 ure your pdftex is version 1.40 or higher. on input line 342.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrpage2.sty
-Package: scrpage2 2013/12/19 v3.12 KOMA-Script package (page head and foot)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/koma-script/scrpage2.sty
+Package: scrpage2 2015/05/06 v3.17a KOMA-Script package (page head and foot)
 LaTeX Info: Redefining \pagemark on input line 174.
 )
 
@@ -362,11 +357,11 @@ Class scrartcl Warning: Usage of package `titlesec' together
 (scrartcl)              if you really need it, because it breaks several
 (scrartcl)              KOMA-Script features, i.e., option `headings' and
 (scrartcl)              the extended optional argument of the section
-(scrartcl)              commands .
+(scrartcl)              commands.
 (scrartcl)              Nevertheless, using requested
 (scrartcl)              package `titlesec' on input line 373.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/titlesec/titlesec.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \ttl@box=\box27
 \beforetitleunit=\skip50
@@ -377,8 +372,33 @@ Package: titlesec 2011/12/15 v2.10.0 Sectioning titles
 \titlewidth=\dimen123
 \titlewidthlast=\dimen124
 \titlewidthfirst=\dimen125
+
+
+Package titlesec Warning: Non standard sectioning command detected
+(titlesec)                Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command detected
+(titlesec)                Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command detected
+(titlesec)                Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command detected
+(titlesec)                Using default spacing and no format.
+
+
+Package titlesec Warning: Non standard sectioning command detected
+(titlesec)                Using default spacing and no format.
+
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/tocloft/tocloft.sty
+
+Package scrartcl Warning: Activating an ugly workaround for a missing
+(scrartcl)                feature of package `titlesec` on input line 373.
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2013/05/02 v2.3f parameterised ToC, etc., typesetting
 Package tocloft Info: The document has section divisions on input line 44.
 \cftparskip=\skip52
@@ -422,17 +442,17 @@ Package tocloft Info: The document has section divisions on input line 44.
 \tablelabelwidth=\skip87
 
 Using KOMA-command "deffootnote" for footnote setup
-(/usr/local/texlive/2014/texmf-dist/tex/latex/koma-script/scrtime.sty
-Package: scrtime 2011/03/31 v3.08b KOMA-Script package (time of LaTeX run)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/koma-script/scrtime.sty
+Package: scrtime 2015/05/06 v3.17a KOMA-Script package (time of LaTeX run)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/carlisle/remreset.sty))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/arsclassica/arsclassica.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/carlisle/remreset.sty))
+(/usr/local/texlive/2015/texmf-dist/tex/latex/arsclassica/arsclassica.sty
 Package: arsclassica 2012/02/21 v4.0 Customizing ClassicThesis (LP)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/caption/caption3.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 57.
 \captionmargin=\dimen126
@@ -450,7 +470,7 @@ Package caption Info: hyperref package is loaded.
 LaTeX Info: Redefining \spacedallcaps on input line 57.
 LaTeX Info: Redefining \spacedlowsmallcaps on input line 57.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/titlesec/block.tss
+(/usr/local/texlive/2015/texmf-dist/tex/latex/titlesec/block.tss
 File: block.tss 2011/12/15
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 192.
@@ -471,27 +491,27 @@ Package hyperref Warning: Option `hyperfootnotes' has already been used,
 Package hyperref Warning: Option `pdfpagelabels' has already been used,
 (hyperref)                setting the option has no effect on input line 192.
 
-) (/usr/local/texlive/2014/texmf-dist/tex/latex/base/fontenc.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.def
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2014/04/30 v1.2b Input encoding file
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks17
 \inpenc@posthook=\toks18
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/utf8.def
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2014/09/29 v1.1m UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/t1enc.dfu
-File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
@@ -640,8 +660,8 @@ File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ot1enc.dfu
-File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00B8 (decimal 184)
@@ -671,8 +691,8 @@ File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/omsenc.dfu
-File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+(/usr/local/texlive/2015/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2014/09/29 v1.1m UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -697,24 +717,24 @@ Now handling font encoding PD1 ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/04/25 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 94.
 )
 \Gin@req@height=\dimen133
 \Gin@req@width=\dimen134
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/enumitem/enumitem.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip88
 \enit@outerparindent=\dimen135
@@ -722,11 +742,11 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box28
 \enitdp@description=\count108
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/lipsum/lipsum.sty
-Package: lipsum 2011/04/14 v1.2 150 paragraphs of Lorem Ipsum dummy text
+(/usr/local/texlive/2015/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count109
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/subfig/subfig.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 \c@KVtest=\count110
 \sf@farskip=\skip89
@@ -740,24 +760,24 @@ Package: subfig 2005/06/28 ver: 1.3 subfig package
 \sf@top=\skip92
 \sf@bottom=\skip93
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip94
 
 For additional information on amsmath, use the `?' option.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks20
 \ex@=\dimen137
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen138
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count115
@@ -798,18 +818,18 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup5
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2004/08/06 v2.20
+(/usr/local/texlive/2015/texmf-dist/tex/latex/amscls/amsthm.sty
+Package: amsthm 2015/03/04 v2.20.2
 \thm@style=\toks25
 \thm@bodyfont=\toks26
 \thm@headfont=\toks27
@@ -820,8 +840,8 @@ Package: amsthm 2004/08/06 v2.20
 \thm@headsep=\skip99
 \dth@everypar=\toks30
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/tools/varioref.sty
-Package: varioref 2011/10/02 v1.4z package for extended references (FMi)
+(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/varioref.sty
+Package: varioref 2014/10/28 v1.5a package for extended references (FMi)
 \c@vrcnt=\count127
 )
 \c@definition=\count128
@@ -853,16 +873,16 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 47.
 LaTeX Font Info:    ... okay on input line 47.
 LaTeX Font Info:    Try loading font information for T1+pplj on input line 47.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/t1pplj.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/t1pplj.fd
 File: t1pplj.fd 2004/09/06 font definitions for T1/pplj.
 )
 \AtBeginShipoutBox=\box31
 Package hyperref Info: Link coloring ON on input line 47.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-(/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count130
@@ -878,7 +898,7 @@ LaTeX Info: Redefining \nameref on input line 47.
 
 LaTeX Info: Redefining \Ref on input line 47.
 
-(/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
+(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count131
 \scratchdimen=\dimen146
@@ -900,17 +920,17 @@ Package microtype Info: No font expansion.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
- (/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-ppl.cfg
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-ppl.cfg
 File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
 )
 Package grfext Info: Graphics extension search list:
@@ -918,14 +938,14 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 452.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Try loading font information for T1+iwona on input line 64.
 
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/iwona/t1iwona.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/iwona/t1iwona.fd
 File: t1iwona.fd 2008/07/22 v0.995 font definition file for T1/iwona (MW)
 )
 Package microtype Info: Loading generic settings for font family
@@ -939,34 +959,34 @@ LaTeX Font Info:    Font shape `T1/iwona/bx/n' in size <20.74> not available
 LaTeX Font Info:    Try loading font information for OT1+pplj on input line 64.
 
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1pplj.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pplj.fd
 File: ot1pplj.fd 2004/09/06 font definitions for OT1/pplj.
 )
 LaTeX Font Info:    Try loading font information for U+zeur on input line 64.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeur.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/eulervm/uzeur.fd
 File: uzeur.fd 2005/01/11 v4.0 (WaS)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-eur.cfg
+(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-eur.cfg
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
 LaTeX Font Info:    Try loading font information for U+zeus on input line 64.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeus.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/eulervm/uzeus.fd
 File: uzeus.fd 2005/01/11 v4.0 (WaS)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-eus.cfg
+(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-eus.cfg
 File: mt-eus.cfg 2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
 )
 LaTeX Font Info:    Try loading font information for U+zeuex on input line 64.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/eulervm/uzeuex.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/eulervm/uzeuex.fd
 File: uzeuex.fd 2005/01/11 v4.0 (WaS)
 )
 LaTeX Font Info:    Try loading font information for OT1+zplm on input line 64.
 
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/psnfss/ot1zplm.fd
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1zplm.fd
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
 Package microtype Info: Loading generic settings for font family
@@ -974,10 +994,10 @@ Package microtype Info: Loading generic settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msa.cfg
+(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-(/usr/local/texlive/2014/texmf-dist/tex/latex/microtype/mt-msb.cfg
+(/usr/local/texlive/2015/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 Package tocbasic Info: character protrusion at toc deactivated on input line 67
@@ -999,9 +1019,7 @@ Package microtype Info: Character `029' is missing
  [1
 
 
-
-
-{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1108,27 +1126,27 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 227.
  ) 
 Here is how much of TeX's memory you used:
- 13227 strings out of 493117
- 204775 string characters out of 6135433
- 460925 words of memory out of 5000000
- 16345 multiletter control sequences out of 15000+600000
+ 13452 strings out of 493089
+ 209585 string characters out of 6134842
+ 490590 words of memory out of 5000000
+ 16592 multiletter control sequences out of 15000+600000
  115175 words of font info for 160 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  52i,15n,52p,2234b,450s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
-exlive/2014/texmf-dist/fonts/enc/dvips/iwona/ec-iwona.enc}{/usr/local/texlive/2
-014/texmf-dist/fonts/enc/dvips/iwona/ec-iwona-sc.enc}</usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2014
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
+exlive/2015/texmf-dist/fonts/enc/dvips/iwona/ec-iwona.enc}{/usr/local/texlive/2
+015/texmf-dist/fonts/enc/dvips/iwona/ec-iwona-sc.enc}</usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/te
+xmf-dist/fonts/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/euler/eufm7.pfb></usr/local/texlive/2015
 /texmf-dist/fonts/type1/public/amsfonts/euler/eurm10.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/local/texlive/2
-014/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/nowacki/iwona/iwonab.pfb></usr/local/texlive/2014/texmf-dist
-/fonts/type1/nowacki/iwona/iwonar.pfb></usr/local/texlive/2014/texmf-dist/fonts
-/type1/nowacki/iwona/iwonari.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
-1/urw/palatino/uplb8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/p
-alatino/uplr8a.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/urw/palatino
+15/texmf-dist/fonts/type1/public/amsfonts/euler/eurm7.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2015/texm
+f-dist/fonts/type1/nowacki/iwona/iwonab.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/nowacki/iwona/iwonar.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/nowacki/iwona/iwonari.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
+1/urw/palatino/uplb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/p
+alatino/uplr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/palatino
 /uplri8a.pfb>
 Output written on IB_final_project.pdf (11 pages, 486830 bytes).
 PDF statistics:
